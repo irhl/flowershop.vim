@@ -8,6 +8,4 @@ Installation:
 3. in your vimrc, add these lines:
 
                   colorscheme flowershop
-                  set termguicolors
-
 
