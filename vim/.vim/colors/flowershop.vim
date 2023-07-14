@@ -91,7 +91,7 @@ let g:colors_name = "flowershop"
     match 2x         /\~\|??\|$@/
 
 
-    hi Normal        ctermfg=0       guifg=#dbc1a2
+    hi Normal        ctermfg=0       guifg=#dbc1a2    guibg=#47392f
     hi Type          ctermfg=1       guifg=#dbc1a2
     hi String        ctermfg=1       guifg=#c6986f
     hi Statement     ctermfg=6       guifg=#cca380
