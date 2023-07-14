@@ -18,10 +18,7 @@ let g:colors_name = "flowershop"
     set nocursorcolumn
     set nocursorline
 
-  "   NOTE: Flowershop is a 256-bit 24 colour palette and
-  "   it is not based on any colorscheme, its objective
-  "   is to follow the pigment of coffee and the growth
-"
+
 "          +-----------------+    +---------------------+
 "          |       ,-_,.     |    |nnnnnnnnnnnnnnnnnnnnn|
 "          |     ,( _  ))    |    |nnnnnnnnnnnnnnnnnnnnn|
