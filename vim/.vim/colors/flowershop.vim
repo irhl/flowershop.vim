@@ -21,8 +21,6 @@ let g:colors_name = "flowershop"
   "   NOTE: Flowershop is a 256-bit 24 colour palette and
   "   it is not based on any colorscheme, its objective
   "   is to follow the pigment of coffee and the growth
-  "   16-color translation for the default terminal palette.
-"
 "
 "          +-----------------+    +---------------------+
 "          |       ,-_,.     |    |nnnnnnnnnnnnnnnnnnnnn|
