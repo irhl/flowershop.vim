@@ -10,10 +10,8 @@ let g:colors_name = "flowershop"
   " check if user is using tty or gui
     if $TERM == 'linux'
         set notermguicolors
-          elseif has ("gui_running")
-              set termguicolors
             else
-                set notermguicolors
+                set termguicolors
           endif
 
     filetype detect
