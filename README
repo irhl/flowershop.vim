@@ -1,0 +1,13 @@
+flowershop
+==========
+my personal colorscheme
+
+Installation:
+1, git clone "github.com/flowershop.vim"
+2, mv ~/flowershop.vim/vim/.vim/colors/flowershop.vim ~/.your/vim/directory
+3. in your vimrc, add these lines:
+
+                  colorscheme flowershop
+                  set termguicolors
+
+
