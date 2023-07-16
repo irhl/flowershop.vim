@@ -1,3 +1,8 @@
+" Name: flowershop.vim
+" Author: mako (irhl)
+" Version: 0.0
+" Repository: https://github.com/irhl/flowershop.vim
+
 hi clear
 syntax reset
 
@@ -17,8 +22,8 @@ let g:colors_name = "flowershop"
     filetype detect
     set nocursorcolumn
     set nocursorline
-
-
+"
+"
 "          +-----------------+    +---------------------+
 "          |       ,-_,.     |    |nnnnnnnnnnnnnnnnnnnnn|
 "          |     ,( _  ))    |    |nnnnnnnnnnnnnnnnnnnnn|
@@ -31,7 +36,7 @@ let g:colors_name = "flowershop"
 "          |       ;l        |    |nn                 nn|
 "          |       _i_,      |    |nn                 nn|
 "          |      l___l      |    |nnnnnnnnnnnnnnnnnnnnn|
-"          |      \___/      |    |nnnnnnnnnnnnnnnnnnnnn|
+"          |      \___/ ~mako|    |nnnnnnnnnnnnnnnnnnnnn|
 "          |-----------------|    |---------------------|
 "          +-----------------+    +---------------------+
 
@@ -87,12 +92,10 @@ let g:colors_name = "flowershop"
     match x          /\s\|+$/
     match 2x         /\~\|??\|$@/
 
-
     hi Normal        ctermfg=0       guifg=#dbc1a2    guibg=#47392f
     hi Type          ctermfg=1       guifg=#dbc1a2
     hi String        ctermfg=1       guifg=#c6986f
     hi Statement     ctermfg=6       guifg=#cca380
-
 
     hi PreProc       ctermfg=1       guifg=#efcca0
     hi Function      ctermfg=8       guifg=#c4a683
@@ -133,13 +136,6 @@ let g:colors_name = "flowershop"
     hi! link         Directory       Operator
     hi! link         modemsg         function
 
-    hi minimapRange     ctermfg=78      ctermbg=NONE  guifg=#c3fbb6
-    hi minimapCursor    ctermfg=78      ctermbg=1     guibg=#c3fbb6
-    hi! link            VertSplit       Nornal
-
-    let g:minimap_cursor_color = 'MinimapCurrentLine'
-    hi MinimapCurrentLine ctermfg=Green ctermbg=NONE
-
     hi Pmenu                         guifg=#847252
     hi Pmenu         ctermbg=15      guibg=#c9b593
     hi Pmenu         cterm=NONE
@@ -161,3 +157,10 @@ let g:colors_name = "flowershop"
 
     hi StatusLine    ctermfg=1       guifg=#47392F
     hi StatusLine    ctermbg=NONE    guibg=#e2ceaa
+
+    hi minimapRange     ctermfg=78      ctermbg=NONE  guifg=#c3fbb6
+    hi minimapCursor    ctermfg=78      ctermbg=1     guibg=#c3fbb6
+    hi! link            VertSplit       Nornal
+
+    let g:minimap_cursor_color = 'MinimapCurrentLine'
+    hi MinimapCurrentLine ctermfg=Green ctermbg=NONE
