@@ -7,4 +7,5 @@ Installation:
 2, mv ~/flowershop.vim/vim/.vim/colors/flowershop.vim ~/.your/vim/directory
 3. in your vimrc, add this line:
                   colorscheme flowershop
+                  colorscheme flowershopli (light mode)
 
