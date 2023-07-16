@@ -24,21 +24,21 @@ let g:colors_name = "flowershop"
     set nocursorline
 "
 "
-"          +-----------------+    +---------------------+
-"          |       ,-_,.     |    |nnnnnnnnnnnnnnnnnnnnn|
-"          |     ,( _  ))    |    |nnnnnnnnnnnnnnnnnnnnn|
-"          |     7 (_) 77    |    |nn                 nn|
-"          |     ((   :))    |    |nn                 nn|
-"          |      ~__>~'     |    |nn                 nn|
-"          |       cY?'      |    |nn   FLOWERSHOP    nn|
-"          |       `l,__     |    |nn   24 - color    nn|
-"          |        l7-'     |    |nn                 nn|
-"          |       ;l        |    |nn                 nn|
-"          |       _i_,      |    |nn                 nn|
-"          |      l___l      |    |nnnnnnnnnnnnnnnnnnnnn|
-"          |      \___/ ~mako|    |nnnnnnnnnnnnnnnnnnnnn|
-"          |-----------------|    |---------------------|
-"          +-----------------+    +---------------------+
+"          +------------------+    +---------------------+
+"          |       ,-_,.      |    |nnnnnnnnnnnnnnnnnnnnn|
+"          |     ,( _  ))     |    |nnnnnnnnnnnnnnnnnnnnn|
+"          |     7 (_) 77     |    |nn                 nn|
+"          |     ((   :))     |    |nn                 nn|
+"          |      ~__>~'      |    |nn                 nn|
+"          |       cY?'       |    |nn   FLOWERSHOP    nn|
+"          |       `l,__      |    |nn   24 - color    nn|
+"          |        l7-'      |    |nn                 nn|
+"          |       ;l         |    |nn                 nn|
+"          |       _i_,       |    |nn                 nn|
+"          |      l___l       |    |nnnnnnnnnnnnnnnnnnnnn|
+"          |      \___/ ~mako |    |nnnnnnnnnnnnnnnnnnnnn|
+"          |------------------|    |---------------------|
+"          +------------------+    +---------------------+
 
 "                        FLOWERSHOP 花屋
 "                     garage pop colorscheme
