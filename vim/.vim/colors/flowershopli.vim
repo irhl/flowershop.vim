@@ -73,7 +73,7 @@ let g:colors_name = "flowershopli"
               au bufenter * match x     /*\|uwu/
           endif
 
-    if expand('%') =~ "flowershop.vim"
+    if expand('%') =~ "flowershopli.vim"
               au bufenter * hi! link    vimComment      Normal
               au bufenter * hi! link    vim9Comment     Normal
               au bufenter * hi x        ctermfg=15
