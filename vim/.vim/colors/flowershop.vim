@@ -1,6 +1,6 @@
 " Name: flowershop.vim
 " Author: mako (irhl)
-" Version: 0.0
+" Version: 0.1
 " Repository: https://github.com/irhl/flowershop.vim
 
 hi clear
@@ -14,7 +14,7 @@ let g:colors_name = "flowershop"
 
   " check if user is using tty or gui
     if $TERM == 'linux'
-        set notermguicolors
+        colorscheme none
             else
                 set termguicolors
           endif
@@ -67,18 +67,14 @@ let g:colors_name = "flowershop"
               au bufenter * hi! link    Identifier      PreProc
               au bufenter * hi! link    tomlTableArray  Normal
               au bufenter * hi! link    tomlTable       Normal
-          elseif (&ft=='text')
-              au bufenter * hi x        ctermfg=2
-              au bufenter * hi x        guifg=#638e6b
-              au bufenter * match x     /*\|uwu/
+          elseif (&ft=='vim')
+              au bufenter * hi! link    Type            Normal
           endif
 
     if expand('%') =~ "flowershop.vim"
               au bufenter * hi! link    vimComment      Normal
               au bufenter * hi! link    vim9Comment     Normal
-              au bufenter * hi x        ctermfg=15
               au bufenter * hi x        guifg=#e0d4be
-              au bufenter * hi 2x       ctermfg=11
               au bufenter * hi 2x       guifg=#e5bab3
               au bufenter * match x     /"/
               au bufenter * match 2x    /*\|❀/
@@ -86,46 +82,42 @@ let g:colors_name = "flowershop"
                 :
           endif
 
-    hi x             ctermbg=NONE
-    hi x             guibg=NONE
-    hi 2x            ctermfg=11
-    match x          /\s\|+$/
-    match 2x         /\~\|??\|$@/
+    hi x             guibg=#e29e9e
+    match x          /\~\|??\|$@/
 
-    hi Normal        ctermfg=0       guifg=#dbc1a2    guibg=#47392f
-    hi Type          ctermfg=1       guifg=#dbc1a2
-    hi String        ctermfg=1       guifg=#c6986f
-    hi Statement     ctermfg=6       guifg=#cca380
+    hi Normal        guifg=#dbc1a2    guibg=#514036
+    hi Type          guifg=#e5b58b
+    hi String        guifg=#c6986f
+    hi Statement     guifg=#cca380
+    hi PreProc       guifg=#efcca0
+    hi Function      guifg=#c4a683
+    hi Identifier    guifg=#8daf85
+    hi Special       guifg=#b6c698
+    hi SpecialKey    guifg=#92b792
+    hi Operator      guifg=#f4c1ba
+    hi Number        guifg=#e29e9e
+    hi Repeat        guifg=#ea8ca4
+    hi Constant      guifg=#ea8ca4
 
-    hi PreProc       ctermfg=1       guifg=#efcca0
-    hi Function      ctermfg=8       guifg=#c4a683
-    hi Identifier    ctermfg=10      guifg=#8daf85
-    hi Special       ctermfg=2       guifg=#b6c698
-    hi SpecialKey    ctermfg=2       guifg=#92b792
-    hi Operator      ctermfg=3       guifg=#f4c1ba
-    hi Number        ctermfg=11      guifg=#efa99e
-    hi Repeat        ctermfg=4       guifg=#dbabc3
-    hi Constant      ctermfg=4       guifg=#dbabc3
+    hi Comment       guifg=#7c6858
+    hi LineNR        guifg=#705a4b
+    hi Visual        guibg=#efcca0    guifg=#514036
+    hi MatchParen    guibg=#efd09b
 
-    hi Comment       ctermfg=7       guifg=#7c6757
-    hi LineNR        ctermfg=7       guifg=#705a4b
-    hi Visual        ctermbg=15      guibg=#e8d4b2
-    hi MatchParen    ctermbg=13      guibg=#efd09b
+    hi Error         guifg=#c6d1b5    guibg=NONE
+    hi ErrorMsg      guifg=#b3c698    guibg=NONE
+    hi WarningMsg    guifg=#b3c698    guibg=NONE
+    hi MoreMsg       guifg=#b3c698    guibg=NONE
+    hi Question      guifg=#b3c698    guibg=NONE
 
-    hi Error         ctermbg=NONE    guifg=#c6d1b5    guibg=NONE
-    hi ErrorMsg      ctermfg=0       guifg=#b3c698    guibg=NONE
-    hi WarningMsg                    guifg=#b3c698    guibg=NONE
-    hi MoreMsg                       guifg=#b3c698    guibg=NONE
-    hi Question                      guifg=#b3c698    guibg=NONE
-
-    hi Title         ctermfg=7       guifg=#B28A67    guibg=NONE
-    hi NonText       ctermfg=7       guifg=#B28A67    guibg=NONE
-    hi Underlined    ctermfg=1       guifg=#c4a683    guibg=NONE
-    hi DiffChange    ctermbg=1       guibg=#c4a683    guifg=NONE
-    hi DiffDelete    ctermbg=3       guibg=#d89393    guifg=NONE
-    hi DiffText      ctermbg=11      guibg=#e5bab3    guifg=NONE
-    hi ALEError                      guifg=#bf6578    guibg=NONE
-    hi ALEWarning                    guibg=#c99d95    guibg=NONE
+    hi Title         guifg=#B28A67    guibg=NONE
+    hi NonText       guifg=#B28A67    guibg=NONE
+    hi Underlined    guifg=#c4a683    guibg=NONE
+    hi DiffChange    guifg=NONE       guibg=#c4a683
+    hi DiffDelete    guifg=NONE       guibg=#d89393
+    hi DiffText      guifg=NONE       guibg=#e5bab3
+    hi ALEError      guifg=#bf6578    guibg=NONE
+    hi ALEWarning    guifg=#c99d95    guibg=NONE
 
     hi! link         TODO            NonText
     hi! link         Search          DiffDelete
@@ -136,31 +128,27 @@ let g:colors_name = "flowershop"
     hi! link         Directory       Operator
     hi! link         modemsg         function
 
-    hi Pmenu                         guifg=#847252
-    hi Pmenu         ctermbg=15      guibg=#c9b593
-    hi Pmenu         cterm=NONE
+    hi Pmenu         guifg=#847252
+    hi Pmenu         guibg=#c9b593
 
-    hi PmenuSel      ctermfg=8       guifg=#847252
-    hi PmenuSel      ctermbg=13      guibg=#e2ceaa
-    hi PMenuSel      cterm=NONE
+    hi PmenuSel      guifg=#847252
+    hi PmenuSel      guibg=#e2ceaa
 
-    hi PmenuSbar     ctermfg=NONE    guifg=NONE
-    hi PmenuSbar     ctermbg=15      guibg=#c9b593
-    hi PmenuSbar     cterm=NONE
+    hi PmenuSbar     guifg=NONE
+    hi PmenuSbar     guibg=#c9b593
 
-    hi PmenuThumb    ctermfg=NONE    guifg=NONE
-    hi PmenuThumb    ctermbg=15      guibg=#c9b593
-    hi PmenuThumb    cterm=NONE
+    hi PmenuThumb    guifg=NONE
+    hi PmenuThumb    guibg=#c9b593
 
-    hi SignColumn    ctermfg=1       guifg=#47392F
-    hi SignColumn    ctermbg=NONE    guibg=NONE
+    hi SignColumn    guifg=#47392F
+    hi SignColumn    guibg=#514036
 
-    hi StatusLine    ctermfg=1       guifg=#47392F
-    hi StatusLine    ctermbg=NONE    guibg=#e2ceaa
+    hi StatusLine    guifg=#47392f
+    hi StatusLine    guibg=#e2ceaa
 
-    hi minimapRange     ctermfg=78      ctermbg=NONE  guifg=#c3fbb6
-    hi minimapCursor    ctermfg=78      ctermbg=1     guibg=#c3fbb6
+    hi minimapRange     guifg=#c3fbb6
+    hi minimapCursor    guibg=#c3fbb6
     hi! link            VertSplit       Nornal
 
     let g:minimap_cursor_color = 'MinimapCurrentLine'
-    hi MinimapCurrentLine ctermfg=Green ctermbg=NONE
+    hi MinimapCurrentLine guifg=#b3c698 guibg=NONE
