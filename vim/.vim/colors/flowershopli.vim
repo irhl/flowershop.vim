@@ -133,6 +133,8 @@ let g:colors_name = "flowershopli"
     hi! link         CurSearch       Visual
     hi! link         CursorLine      Visual
     hi! link         CursorLineNr    Visual
+    hi! link         FoldColumn      Visual
+    hi! link         Folded          Visual
     hi! link         Directory       Operator
     hi! link         modemsg         function
 
