@@ -100,7 +100,7 @@ let g:colors_name = "flowershop"
     hi Constant      guifg=#ea8ca4
 
     hi Comment       guifg=#7c6858
-    hi LineNR        guifg=#705a4b
+    hi LineNR        guifg=#705a4b    guibg=#514036
     hi Visual        guibg=#efcca0    guifg=#514036
     hi MatchParen    guibg=#efd09b
 
