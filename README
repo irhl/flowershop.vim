@@ -5,7 +5,7 @@ my personal colorscheme
                https://0x0.st/Hee4.png
 
 Installation:
-1, git clone 'https://github.com/flowershop.vim'
+1, git clone 'https://github.com/irhl/flowershop.vim'
 2, mv ~/flowershop.vim/vim/.vim/colors/flowershop.vim ~/.your/vim/directory
 3. in your vimrc, add this line:
                   colorscheme flowershop
