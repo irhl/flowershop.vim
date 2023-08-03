@@ -108,7 +108,7 @@ let g:colors_name = "flowershopli"
     hi Number        ctermfg=11      guifg=#efafa7
     hi Constant      ctermfg=5       guifg=#dbabc3
 
-    hi LineNR        ctermfg=15      guifg=#e0d4be
+    hi LineNR        ctermfg=15      guifg=#e0d4be    guibg=#f2e2c9
     hi Visual        ctermbg=13      guibg=#e8d4b2
     hi MatchParen    ctermbg=13      guibg=#efd09b
 
@@ -155,8 +155,8 @@ let g:colors_name = "flowershopli"
     hi SignColumn    ctermfg=1       guifg=#847252
     hi SignColumn    ctermbg=NONE    guibg=NONE
 
-    hi StatusLine    ctermfg=0       guifg=#847252
-    hi StatusLine    ctermfg=0       guibg=NONE
+    hi StatusLine    ctermfg=0       guifg=#f2e2c9
+    hi StatusLine    ctermfg=0       guibg=#847252
 
     hi minimapRange     ctermfg=78      ctermbg=NONE  guifg=#e56e95
     hi minimapCursor    ctermfg=78      ctermbg=1     guibg=#e8d4b2
