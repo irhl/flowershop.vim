@@ -14,7 +14,7 @@ let g:colors_name = "flowershop"
 
   " check if user is using tty or gui
     if $TERM == 'linux'
-        colorscheme none
+        set t_Co=0
             else
                 set termguicolors
           endif
